@@ -1,19 +1,20 @@
-const readline = require("readline-sync");
-console.log("Enter the day anywhere between 1-30");
-const Day = readline.question('Enter the Day :');
-console.log("Enter the Month anywhere between 1-12");
-const Month = readline.question('Enter The Month In Digit :');
-let day = Number(Day);
-let month = Number(Month);
-
-if((month == 3 && day >= 20 ) || (month == 4 && day > 0) ||
-  (month == 5 && day > 0 ) || (month == 6 && day > 0))
-  {
-        console.log("True");
-  }
-  else
-  {
-      console.log("False");
-  }
-
+let Min=100;
+let Max=0;
+MinLimit=100;
+MaxLimit=999;
+for(let i=0;i<=4;i++)
+{
+    let num = (Math.random()*(MaxLimit-MinLimit + 1) + minLimit); //For three digit random numbers 
+    console.log("${i} : The number is ${num}");
+    if(Min>num)
+    {
+        Min=num;
+    }
+    if(Max<num)
+    {
+        Max=num;
+    }
+}
+console.log("MInimum number is ${Min}");
+console.log("Maximum number is ${Max}");
 
