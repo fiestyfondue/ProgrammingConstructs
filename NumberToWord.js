@@ -42,3 +42,7 @@ else if(digit == 9)
 {
     console.log("Nine");
 }
+else
+{
+    console.log("Invalid Input");
+}
